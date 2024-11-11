@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="login-panel">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username" id="username" class="u1"><br><br>
+        <input type="password" placeholder="Password" id="password" class="u2"><br><br>
+        <button class="btn" onclick="login()">Login</button>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <div class="dashboard-header">Dashboard</div>
+        <div class="w-m" id="welcome-message">Welcome</div>
+        <div class="container">
+            <div class="button-container">
+                <button class="fetch-button" id="fetchuser" onclick="fetchUsers()">Fetch Top 10 GitHub Users</button>&nbsp;&nbsp;
+                <select id="sort-options">
+                    <option value="default">Default</option>
+                    <option value="alphabetical">Alphabetical</option>
+                </select>
+                <div id="user-container"></div>
+            </div>
+            <br><br><br>
+            <button class="logout" onclick="logout()">Logout</button>
+        </div>
+    </div>
+</body>
+</html>
